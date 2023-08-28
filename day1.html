@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--
+    HTML DERSLERİ 
+
+<div></div>  block elementi
+<span></span> inline elementi
+<p></p> block elementi
+
+METİN BİÇİMLENDİRME ETİKETLERİ
+<b></b> kalın 
+<strong></strong> kalın + önemli
+<i></i> italik
+<em></em> italik + önemli
+<mark></mark> vurgulama
+<small></small> daha küçük
+<s></s> üstünü çiziyor(artık doğru değil)
+<del></del> eski değer <ins></ins> yeni değer
+<u></u> altı çizili + genelde yanlış yazılan metinler için
+<sub></sub> aşağıdaki sayıları yazmak için
+<sup></sup> üzerindeki sayıları yazmak için
+<br> yeni satır
+<abbr></abbr> kısaltmaları işaretler
+<q></q> alıntılama etiketi
+<blockquote></blockquote> uzun alıntılar + cite diye bir özellik eklenerek alıntı yapılan
+adres belirtilebilir
+
+-->
+
+
+<!--
+
+LİNK ETİKETİ
+
+<a href="" target=_self title="" ></a> link eklemek için + yeni bir sekmede açmasını istiyorsak target=_blank
+
+    *Idleri kullanarak site içinde yönlendirme yapabiliyoruz.
+
+<p>
+    <a href="#ders1">HTML Dersleri 1</a>
+    <a href="#ders2">HTML Dersleri 1</a>
+    <a href="#ders3">HTML Dersleri 1</a>
+</p>
+
+<div id="ders1">
+    test yazı <br>
+    test yazı <br>
+</div>
+<div id="ders2">
+    test yazı <br>
+    test yazı <br>
+</div>
+<div id="ders3">
+    test yazı <br>
+    test yazı <br>
+</div>
+<div id="ders4">
+    test yazı <br>
+    test yazı <br>
+</div>
+
+-->
+
+
+<!--
+
+RESİM ETİKETİ
+<img src="" width="200" title="" alt="">
+src ve srcset ekranın durumuna göre işlem yapılmasını sağlıyor
+
+-->
+
+
+<!--
+
+TABLO ETİKETİ
+
+<table>
+<caption></caption> tablo başlığı için
+    <thead> başlıklar için
+        <tr>
+         <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr> satırlar için
+        <td> sütunlar için
+        </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">
+
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+colspan - iki sütunu birleştiriyor
+rowspan - iki satırı birleştiriyor
+-->
+
+
+<!--
+    LİSTE ETİKETLERİ
+
+    sırasız
+<ul>
+    <li>    
+    </li>
+</ul>
+    sıralı
+<ol>
+    <li>     
+    </li>
+</ol>
+    tanım listesi
+<dl>
+    <dt>başlık</dt>
+    <dd>tanım</dd>
+</dl>
+
+listelerde type belirterek sıralama şeklini belirleyebiliriz
+-->
+
+
+<!--
+
+    MEDYA ETİKETLERİ
+
+<audio controls loop muted>
+    <source src="" type="audio/mpeg">
+</audio>
+<br>
+<video width="" loop poster="" controls>
+    <source src="" type="video/mp4">
+    <track src="subtitle-en.vtt" kind="subtitles" srclang="en" label="İngilizce">
+    <track src="subtitle-de.vtt" kind="subtitles" srclang="de" label="Almanca">
+</video>
+
+postere görsel ekliyoruz video açılmadan önce görünüyor
+
+-->
+
+
+<!--
+    IFRAME ETİKETİ
+
+<iframe src="" width="" height=""></iframe>
+-->
+
+
+<!--
+
+    FORM ETİKETLERİ
+
+action=gönderilecek sitenin linki
+radio ile iki seçenekten birini seçebilmeyi sağlıyoruz
+checked varsayılan bir değer atamayı sağlar
+readonly özelliğiyle input girişi engellenir
+required ile input girişini zorunlu hale getiririz
+
+<input type="range" min="0" max="20" step="5">
+<input type="search">
+<input type="tel">
+<input type="time">
+<input type="url">
+
+autocomplete="off" diyerek özelliği kapatabiliriz
+
+<textarea name="" cols="80" rows="40"></textarea>
+
+<button type="button">Gönder</button>
+-->
+
+
+<form action="" method="get" id="form1">
+    <legend>Giriş Yap</legend>
+    <fieldset>
+    <label for="kadi">Kullanıcı adı</label>
+    <input placeholder="Kullanıcı adınızı giriniz: " required maxlength="6" id="kadi" type="text" autofocus> <br>
+    <label for="sifre">Şifre</label>
+    <input required id="sifre" type="password"> <br>
+    <label for="dosya">Dosya Seç</label>
+    <input id="dosya" type="file" name="dosya[]" multiple accept="image/*"> <br>
+    <label for="eposta">E-posta</label>
+    <input type="email" id="eposta"> <br>
+    </fieldset>
+    <label><input type="checkbox">Kuralları kabul ediyorum</label> <br>
+    <label>
+        <input type="radio" name="cinsiyet" checked value="kadın"> Kadın
+    </label>
+    <label>
+        <input type="radio" name="cinsiyet" value="erkek"> Erkek
+    </label>
+    <br>
+    <input type="hidden" name="test"  value="test">
+    <input type="submit">
+    <input type="reset" value="sıfırla">
+</form>
+
+<br>
+
+<input type="color"> <br>
+<input type="date">
+<input type="datetime-local"> <br><br>
+
+<input list="diller" name="diller" form="form1">
+<datalist id="diller">
+    <option value="HTML">
+    <option value="CSS">
+    <option value="JavaScript">
+</datalist> <br>
+
+
+<select name="dil">
+    <optgroup label="Front-end Dilleri">
+     <option value="css">CSS</option>
+     <option value="html">HTML</option>
+     <option value="js">JS</option></optgroup>
+    <optgroup label="Back-end Dilleri">
+     <option value="php">PHP</option>
+     <option value="js">JS</option>
+     <option value="Python">Python</option>
+    </optgroup>
+</select> <br>
+
+
+</body>
+</html>
