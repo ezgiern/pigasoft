@@ -1,1 +1,811 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <a href="https://www.hepsiburada.com/" class="logo">
+            <img src="images/logo.png" alt="logo">
+        </a>
 
+        <b>
+            <a href="https://hepsiburada.com/premium" class="premiumlogo">Premium'u</a>
+            <span color="black" class="premiumlogo2">keşfet</span>
+        </b>
+        
+        <nav class="navbar">
+                <a href="https://www.hepsiburada.com/siparislerim">Siparişlerim</a>
+                <a href="https://www.hepsiburada.com/gunun-firsati-teklifi" >Süper Fiyat,Süper Teklif</a>
+                <a href="https://www.hepsiburada.com/kampanyalar/yurt-disindan-urunler?wt_int=hytop.yurtdisi.kampanya" >Yurt Dışından</a>
+                <a href="https://www.hepsiburada.com/kampanyalar" >Kampanyalar</a>
+                <a id="gk" href="https://www.hepsiburada.com/girisimci-kadinlar" >Girişimci Kadınlar</a>
+                <a href="https://www.hepsiburada.com/cozummerkezi" >Müşteri Hizmetleri</a>
+                <a id="hp"  href="https://premium.hepsiburada.com/" >Hepsiburada Premium</a>
+                <a href="https://www.hepsiburada.com/nasil-online-satis-yapilir" >Hepsiburada'da Satıcı Ol</a>
+        </nav>
+
+        <div class="container">
+            <form>
+                <a class="search">
+                    <img src="images/search.png" alt="search logo">
+                </a>
+                <input type="text" placeholder="Ürün,kategori veya marka ara">
+                <button type="submit">ARA</button>
+            </form>
+
+            
+        </div>
+
+        <div class="location">
+        <form>
+                <a class="loc-icon">
+                    <img src="images/loc.png" alt="loc logo">
+                </a>
+            <label id="loc1" for="loc">Konum</label>
+            <select name="location" id="loc2">
+              <option value="il" disabled selected hidden>Konum Seç</option>
+              <option value="il">İl seçin</option>
+              <option value="ilçe">İlçe Seçin</option>
+              <option value="mahalle">Mahalle Seçin</option>
+              <option value="kaydet">Kaydet</option>
+            </select>  
+      </form>
+        </div>
+
+
+        <div class="box1">
+            <a class="user-icon">
+            <img src="images/user.png" alt="user logo">
+            </a>
+            <form>    
+                <select name="sign-in" id="sign">
+                  <option disabled selected hidden>Giriş Yap</option>
+                  <option value="signin">Giriş Yap</option>
+                  <option value="signup">Üye Ol</option>
+                  <option value="orders">Siparişlerim</option>
+                  <option value="q">Soru ve Taleplerim</option>
+                  <option value="op">Sana Özel Fırsatlar</option>
+                  <option value="pay">Hepsipay</option>
+                  <option value="user">Kullanıcı Bilgilerim</option>
+                  <option value="değerlendirme">Değerlendirmelerim</option>
+                  <option value="likes">Beğendiklerim</option>
+                  <option value="lists">Tüm Listelerim</option>
+                  <option value="coupon">Kuponlarım</option>
+                </select>  
+          </form>
+          <p id="part2">veya üye ol</p>
+            </div>
+
+            <div class="box2">
+                <a class="shoppingcar-icon">
+                <img src="images/sc.png" alt="shopping car logo">
+                </a>
+                <a id="sepet" href="https://checkout.hepsiburada.com/sepetim">Sepetim</a>
+            </div>
+
+
+              <style>
+                .line
+                {
+                    height:7px;
+                    width:100%;
+                    display:table;
+                    margin-left:0;
+                    margin-right:0;
+                }
+                .line .orange
+                {
+                    background:#FF6000;
+                    width:45%;
+                    height:100%;
+                    display:table-cell;
+                }
+                .line .blue
+                {
+                    background:#49C7ED;
+                    width:15%;
+                    height:100%;
+                    display:table-cell;
+                }
+                .line .purple
+                {
+                    background:#7723DB;
+                    width:15%;
+                    height:100%;
+                    display:table-cell;
+                }
+                .line .green
+                {
+                    background:#57B900;
+                    width:15%;
+                    height:100%;
+                    display:table-cell;
+                }
+                .line .darkpurple
+                {
+                    background:#5D196A;
+                    width:15%;
+                    height:100%;
+                    display:table-cell;
+                }
+            </style>
+            
+            <div class="line">
+                <div class="orange"></div>
+                <div class="blue"></div>
+                <div class="purple"></div>
+                <div class="green"></div>
+                <div class="darkpurple"></div>
+            </div>
+
+           
+        <div id="menu">
+            <div class="buttongroup" style="text-align: center;">
+                <button class="button1">
+                    Elektronik 
+                </button></div>
+
+                <div class="buttongroup">
+                    <button class="button1">
+                        Moda
+                    </button>
+                        <div class="dropdown-content">
+                        <div class="row"> 
+                              <div class="column">
+                                <th>
+                                    <td><h3>Moda Anasayfa<br><br></h3></td>
+                                    <td><h3>Kadın<br></h3></td>
+                                </th>
+                                <ul>
+                                    <li><a href="https://www.hepsiburada.com/bayan-giyim-urunleri-c-60004640">Giyim 
+                                        <ul id="giyim">
+                                        <li><a href="https://www.hepsiburada.com/elbiseler-c-12087202">Elbise<br></a></li>
+                                        <li><a href="https://www.hepsiburada.com/bayan-kazaklar-c-60000053">Triko & Kazak<br></a></li>
+                                        <li><a href="https://www.hepsiburada.com/bayan-montlar-c-60000721">Mont,</a> <a href="https://www.hepsiburada.com/bayan-kabanlar-c-60000058">Kaban<br></a></li>
+                                        <li><a href="https://www.hepsiburada.com/bayan-sweatshirt-c-12101382">Sweatshirt<br></a></li>
+                                        <li><a href="https://www.hepsiburada.com/bluz-c-12087195">Bluz<br></a></li>
+                                        <li><a href="https://www.hepsiburada.com/bayan-gomlekler-c-60000715">Gömlek<br></a></li>
+                                        <li><a href="https://www.hepsiburada.com/bayan-pantolonlar-c-12087198">Pantolon<br></a></li>
+                                        <li><a href="https://www.hepsiburada.com/kot-ceket-c-60006712">Kadın Kot Ceket ,</a> 
+                                        <a href="https://www.hepsiburada.com/kot-etek-c-60006822">Kot Etek <br></a></li>
+                                        <li><a href="https://www.hepsiburada.com/bayan-t-shirt-c-12087193">T-Shirt<br></a></li>
+                                        <li><a href="https://www.hepsiburada.com/bayan-ceketler-c-60000056">Ceket<br></a></li>
+                                        <li><a href="https://www.hepsiburada.com/etekler-c-12087197">Etek<br></a></li>
+                                        <li><a href="https://www.hepsiburada.com/bayan-taytlar-c-60002665">Tayt<br></a></li>
+                                        <li><a href="https://www.hepsiburada.com/trenckotlar-c-60000720">Trençkot</a></li>
+                                        </ul>
+                                    </a>
+                                    </li>
+
+                                    <li><a href="https://www.hepsiburada.com/spor-giyim-urunleri-c-60000545?filtreler=cinsiyet:Kad%E2%82%ACC4%E2%82%ACB1n">Spor Giyim 
+                                        <ul id="giyim">
+                                            <li><a href="https://www.hepsiburada.com/hamile-giyim-c-18001">Hamile Giyim</a></li>
+                                        </ul>
+                                    </a></li>
+                                    <li><a href="https://www.hepsiburada.com/buyuk-beden-c-12087217">Büyük Beden<br></a></li>
+                                    <li><a href="https://www.hepsiburada.com/tesettur-giyim-c-60006034">Tesettür Giyim<br></a></li>
+                                    <li><a href="https://www.hepsiburada.com/ic-giyim-urunleri-c-60001585">İç Giyim</a></li>
+                                    <li><a href="https://www.hepsiburada.com/plaj-giyim-urunleri-c-60005259">Plaj Giyim<br>
+                                        <ul id="giyim">
+                                            <li><a href="https://www.hepsiburada.com/bayan-pijamalar-c-60000734">Kadın Pijama</a></li>
+                                        </ul>
+                                    </a></li>
+                                    <li><a href="https://www.hepsiburada.com/ev-rahatligi-c-60005418">Kadın Ev Rahatlığı</a></li>
+                                </ul><br>
+                                  
+                                  <th>
+                                    <td><h3>Kadın Aksesuar & Takı</h3></td>
+                                  </th>
+        
+                                  <ul>
+                                    <li><a href="https://www.hepsiburada.com/bayan-kol-saatleri-c-25008405">Saat<br></a></li>
+                                    <li><a href="https://www.hepsiburada.com/kadin-gunes-gozlukleri-c-1123163">Güneş Gözlüğü<br></a></li>
+                                    <li><a href="https://www.hepsiburada.com/kadin-takilari-c-80586080">Takı & Bijuteri<br></a></li>
+                                    <li><a href="https://www.hepsiburada.com/taki-mucevher-modelleri-c-16032929?filtreler=fiyat:1000-max">Mücevher<br></a></li>
+                                  </ul><br>
+                                </div>
+                                
+        
+                              <div class="column">
+                                <th>
+                                    <td><h3>Erkek</h3></td>
+                                </th>
+                                <ul>
+                                    <li><a href="https://www.hepsiburada.com/erkek-giyim-urunleri-c-60004641">Giyim</a></li>
+                                        <ul id="giyim">
+                                            <li><a href="https://www.hepsiburada.com/erkek-sweatshirt-c-12102800">Sweatshirt<br></a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-kazaklar-c-60000066">Triko & Kazak<br></a></li>
+                                            <li><a href="https://www.hepsiburada.com/kampanyalar/erkek-mont-ve-kabanlar">Mont & Kaban<br></a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-pantolonlar-c-12087282">Pantolon<br></a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-gomlekleri-c-12087280">Gömlek<br></a></li>
+                                            <li><a href="https://www.hepsiburada.com/yagmurluklar-c-60000761">Yağmurluk<br></a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-esofmanlar-c-60000676">Eşofman<br></a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-t-shirt-c-12087279">T-Shirt<br></a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-t-shirt-c-12087279?filtreler=yakastili:Polo%E2%82%AC20Yaka">Polo T-Shirt<br></a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-sortlar-c-60000754">Şort<br></a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-ceketler-c-60000758">Ceket<br></a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-takim-elbiseler-c-12140708">Takım Elbise<br></a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-denim-pantolonlar-c-60000756">Erkek Denim Pantolonlar , <br></a><a href="https://www.hepsiburada.com/kot-gomlek-c-203872">Erkek Kot Gömlek<br></a></li>
+                                        </ul>
+
+                                    </a></li>
+                                    <li><a href="https://www.hepsiburada.com/spor-giyim-urunleri-c-60000545?filtreler=cinsiyet:Erkek">Spor Giyim</a></li>
+                                    <li><a href="https://www.hepsiburada.com/outdoor-giyim-ayakkabilar-c-22006250?filtreler=cinsiyet:Erkek">Outdoor Giyim</a></li>
+                                    <li><a href="https://www.hepsiburada.com/erkek-takim-elbiseler-c-12140708">Klasik Giyim</a></li>
+                                    <li><a href="https://www.hepsiburada.com/erkek-ic-giyim-urunleri-c-60001586">İç Giyim</a></li>
+                                    <li><a href="https://www.hepsiburada.com/sort-mayo-c-12087307">Plaj Giyim</a></li>
+                                    <li><a href="https://www.hepsiburada.com/erkek-pijamalar-c-60000694">Pijama & Ev Giyim</a></li>
+                                </ul>
+                                
+                                <th>
+                                    <td><h3>Erkek Aksesuar & Takı</h3></td>
+                                </th>
+                                <ul>
+                                    <li><a href="https://www.hepsiburada.com/erkek-kol-saatleri-c-25008404">Saat</a></li>
+                                    <li><a href="https://www.hepsiburada.com/erkek-gunes-gozlukleri-c-1123164">Güneş Gözlüğü</a></li>
+                                    <li><a href="https://www.hepsiburada.com/erkek-takilar-c-60004716">Takı</a></li>
+                                    <li><a href="https://www.hepsiburada.com/pipo-sigara-tesbih-cakmak-aksesuarlari-c-25000094">Aksesuar</a> </li>
+                                </ul>
+        
+                                <th>
+                                    <td><h3>Altın</h3></td>
+                                </th>
+        
+                                <th>
+                                    <td><h3>Outdoor Giyim & Ayakkabı</h3></td>
+                                </th>
+                              </div>
+                      
+                              <div class="column">
+                                <th>
+                                    <td><h3>Ayakkabı & Çanta</h3></td>
+                                </th>
+                                <ul>
+                                    <li><a href="https://www.hepsiburada.com/bayan-ayakkabilar-c-60000116">Kadın Ayakkabı
+                                        <u id="giyim">
+                                            <li><a href="https://www.hepsiburada.com/bayan-gunluk-ayakkabilar-c-60000121">Günlük Ayakkabı</a></li>
+                                            <li><a href="https://www.hepsiburada.com/spor-ayakkabilar-c-384551?filtreler=cinsiyet:Kad%E2%82%ACC4%E2%82%ACB1n">Spor Ayakkabı</a></li>
+                                            <li><a href="https://www.hepsiburada.com/abiye-ayakkabi-c-60000800">Klasik Ayakkabı</a></li>
+                                            <li><a href="https://www.hepsiburada.com/topuklu-ayakkabilar-c-60003869">Topuklu Ayakkabı</a></li>
+                                            <li><a href="https://www.hepsiburada.com/bayan-botlar-c-60000119">Kadın Bot,</a><a href="https://www.hepsiburada.com/bayan-botlar-c-60000119">Kadın Çizme</a></li>
+                                            <li><a href="https://www.hepsiburada.com/bayan-terlikler-c-60003913">Kadın Terlik,</a><a href="https://www.hepsiburada.com/bayan-terlikler-c-60003913">Kadın Sandalet</a></li>
+                                            <li><a href="https://www.hepsiburada.com/bayan-sandaletler-c-60003863">Kadın Sandalet</a></li>
+                                        </u>
+                                    </a></li>
+                                    <li><a href="https://www.hepsiburada.com/ayakkabi-c-60000117">Erkek Ayakkabı
+                                        <u id="giyim">
+                                            <li><a href="https://www.hepsiburada.com/erkek-gunluk-ayakkabilar-c-60000126">Günlük Ayakkabı</a></li>
+                                            <li><a href="https://www.hepsiburada.com/spor-ayakkabilar-c-384551?filtreler=cinsiyet:Erkek">Spor Ayakkabı</a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-klasik-ayakkabilar-c-60003835">Klasik Ayakkabı</a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-trekking-ayakkabilar-c-60003918">Outdoor Ayakkabı</a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-botlar-c-60000125">Bot</a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-terlikler-c-60000803">Erkek Terlik,</a><a href="https://www.hepsiburada.com/erkek-terlikler-c-60000803">Erkek Sandalet</a></li>
+                                            <li><a href="https://www.hepsiburada.com/erkek-sandalet-c-60003843">Erkek Sandalet</a></li>
+                                        </u>
+                                    </a></li>
+                                    <li><a href="https://www.hepsiburada.com/gunluk-spor-ayakkabilari-c-27045582">Sneaker</a></li>
+                                    <li><a href="https://www.hepsiburada.com/yuruyus-kosu-ayakkabilari-c-27047262">Koşu Ayakkabısı</a></li>
+                                    <li><a href="https://www.hepsiburada.com/bayan-cantalari-c-60000163">Kadın Çanta</a></li>
+                                    <li><a href="https://www.hepsiburada.com/erkek-cantalar-c-60003896">Erkek Çanta</a></li>
+                                    <li><a href="https://www.hepsiburada.com/bavullar-valizler-c-1300939">Valiz & Seyahat</a></li>
+                                </ul><br>
+                               
+                                <th>
+                                    <td><h3>Çocuk</h3></td>
+                                </th>
+                                <ul>
+                                    <li><a href="https://www.hepsiburada.com/kiz-cocuk-c-205474">Kız Çocuk</a></li>
+                                    <li><a href="https://www.hepsiburada.com/erkek-cocuk-c-205454">Erkek Çocuk</a></li>
+                                    <li><a href="https://www.hepsiburada.com/bebek-kiyafetleri-giyim-c-60007347">Bebek</a></li>
+                                    <li><a href="https://www.hepsiburada.com/erkek-cocuk-ayakkabi-c-205719">Erkek Çocuk Ayakkabısı</a></li>
+                                    <li><a href="https://www.hepsiburada.com/cocuk-ayakkabilar-c-60002362">Kız Çocuk Ayakkabısı</a></li>
+                                    <li><a href="https://productimages.hepsiburada.net/s/258/200-200/110000242049584.jpg">Bebek Ayakkabısı</a></li>
+                                </ul><br> 
+                                
+                              <th>
+                                <td><h3>Yurt Dışından</h3></td>
+                              </th>
+        
+                              </div>
+        
+                             
+                              <div class="column">
+                                <img src=https://images.hepsiburada.net/banners/0/banner_20230511102859.png>
+                              </div>
+                      
+                              <div class="column">
+                                <img src="https://images.hepsiburada.net/banners/0/banner_20230511102923.png">
+                                <img src="https://images.hepsiburada.net/banners/0/banner_20230511102939.png">
+                              </div>
+
+
+                                <div><img src="https://images.hepsiburada.net/banners/0/banner_20230511103033.png"></div>
+        
+                                <div class="column">
+                                    <img src=https://images.hepsiburada.net/banners/0/banner_20230511103108.png>
+                                    <img src=https://images.hepsiburada.net/banners/0/banner_20221025110949.png>
+                                    <img src=https://images.hepsiburada.net/banners/0/banner_20230511103238.png>
+                                  </div>
+        
+        
+                                  <div class="column">
+                                    <img src=https://images.hepsiburada.net/banners/0/banner_20230511103127.png>
+                                    <img src=https://images.hepsiburada.net/banners/0/banner_20230511103140.png>
+                                    <img src=https://images.hepsiburada.net/banners/0/banner_20230511103209.png>
+                                    <img src=https://images.hepsiburada.net/banners/0/banner_20230511103306.png>
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+                
+         
+                <div class="buttongroup">
+                <button class="button1">
+                    Ev,Yaşam, <br> Kırtasiye,Ofis
+                </button>
+                <div class="dropdown-content">
+                    <div class="row"> 
+                          <div class="column">
+                            <th>
+                                <td><h3>Sofra & Mutfak<br></h3></td>
+                            </th>
+                            <ul id="ev">
+                                <li><a href="https://www.hepsiburada.com/pisirme-c-80667013">Tava & Tencere & Düdüklü Tencere</a></li>
+                                <li><a href="https://www.hepsiburada.com/sofra-servis-sunum-c-80667016">Yemek & Kahvaltı Takımı</a></li>
+                                <li><a href="https://www.hepsiburada.com/catal-kasik-bicak-takimlari-c-235155">Çatal,Kaşık,Bıçak Takımları</a></li>
+                                <li><a href="https://www.hepsiburada.com/caydanlik-cezveler-c-22530">Çaydanlık & Kahve Demleme</a></li>
+                                <li><a href="https://www.hepsiburada.com/yemek-hazirlama-gerecleri-c-80320060">Yemek Hazırlık Gereçleri</a></li>
+                                <li><a href="https://www.hepsiburada.com/ekmek-kutusu-saklama-kaplari-c-231100">Saklama & Düzenleme</a></li>
+                            </ul>
+
+                            <th>
+                                <td><h3>Ev Gereçleri & Ütü Masaları<br><br></h3></td>
+                                <td><h3>Mobilya<br></h3></td>
+                            </th>
+
+                            <ul id="ev">
+                                <li><a href="">Salon & Oturma Odası</a></li>
+                                <li><a href="">Yatak Odası</a></li>
+                                <li><a href="">Çalışma Odası</a></li>
+                                <li><a href="">Antre & Hol</a></li>
+                                <li><a href="">Mutfak</a></li>
+                                <li><a href="">Yemek Odası</a></li>
+                                <li><a href="">Genç Odası</a></li>
+                                <li><a href="">Bahçe & Balkon</a></li>
+                            </ul>
+
+                            <th>
+                                <td><h3>Aydınlatma<br></h3></td>
+                            </th>
+
+                            <ul id="ev">
+                                <li><a href="">Avize</a></li>
+                                <li><a href="">Lambader</a></li>
+                                <li><a href="">Abajur</a></li>
+                                <li><a href="">Masa Lambası</a></li>
+                                <li><a href="">Aplik</a></li>
+                                <li><a href="">Ampul</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="column">
+                            <th>
+                                <td><h3>Ev Tekstili<br></h3></td>
+                            </th>
+
+                            <ul id="ev">
+                                <li><a href="">Nevresim</a></li>
+                                <li><a href="">Yorgan</a></li>
+                                <li><a href="">Yastık</a></li>
+                                <li><a href="">Pike</a></li>
+                                <li><a href="">Halı & Kilim</a></li>
+                                <li><a href="">Perde</a></li>
+                                <li><a href="">Alez</a></li>
+                                <li><a href="">Banyo Tekstili</a></li>
+                                <li><a href="">Mutfak Tekstili</a></li>
+                                <li><a href="">Kırlent</a></li>
+                            </ul>
+
+                            <th>
+                                <td><h3>Ev Dekorasyon<br></h3></td>
+                            </th>
+
+                            <ul id="ev">
+                                <li><a href="">Tablo</a></li>
+                                <li><a href="">Dekoratif Aksesuar</a></li>
+                                <li><a href="">Mum & Kokular</a></li>
+                                <li><a href="">Ayna</a></li>
+                                <li><a href="">Duvar Kağıdı</a></li>
+                                <li><a href="">Pratik Ürünler</a></li>
+                            </ul>
+
+                            <th>
+                                <td><h3>Yatak<br><br></h3></td>
+                                <td><h3>Ofis Mobilyaları<br></h3></td>
+                            </th>
+
+                            <ul id="ev">
+                                <li><a href="">Ofis Masası</a></li>
+                                <li><a href="">Ofis Dolabı</a></li>
+                                <li><a href="">Kitaplıklar</a></li>
+                                <li><a href="">Ofis Aksesuarı</a></li>
+                                <li><a href="">Ergonomi Ürünleri</a></li>
+                                <li><a href="">Oyuncu Koltuğu</a></li>
+                                <li><a href="">Ofis Koltuğu</a></li>
+                            </ul>
+                        </div>  
+                        
+                        <div class="column">
+                            <th>
+                                <td><h3>Ofis/Kırtasiye<br></h3></td>
+                            </th>
+
+                            <ul id="ev">
+                                <li><a href="">Kırtasiye Ürünleri</a></li>
+                                <li><a href="">Ofis Makineleri</a></li>
+                                <li><a href="">Fotokopi Kağıdı</a></li>
+                                <li><a href="">Projeksiyon Sistemleri</a></li>
+                                <li><a href="">Piller & Şarj Cihazları</a></li>
+                                <li><a href="">Ofis Sarf Malzemeleri</a></li>
+                                <li><a href="">Sanatsal Malzemeler</a></li>
+                            </ul>
+
+                            <th>
+                                <td><h3>Banyo & Mutfak<br></h3></td>
+                            </th>
+
+                            <ul id="ev">
+                                <li><a href="">Banyo Mobilyası</a></li>
+                                <li><a href="">Duş Sistemleri</a></li>
+                                <li><a href="">Duşakabin</a></li>
+                                <li><a href="">Banyo Aksesuarı</a></li>
+                                <li><a href="">Batarya & Musluk</a></li>
+                                <li><a href="">Banyo Tekstili</a></li>
+                                <li><a href="">Vitrifiye</a></li>
+                                <li><a href="">Tesisat</a></li>
+                            </ul>
+
+                            <th>
+                                <td><h3>Elektrikli Ev Aletleri<br></h3></td>
+                            </th>
+
+                            <ul id="ev">
+                                <li><a href="">Elektrikli Mutfak Aletleri</a></li>
+                                <li><a href="">Ütüler</a></li>
+                                <li><a href="">Süpürgeler</a></li>
+                                <li><a href="">Çay Makineleri</a></li>
+                                <li><a href="">Kahve Makineleri</a></li>
+                                <li><a href="">Tost Makinesi</a></li>
+                                <li><a href="">Blender</a></li>
+                            </ul>
+
+                            <th>
+                                <td><h3>Yurt Dışından<br></h3></td>
+                            </th>
+
+                            <ul id="ev">
+                                <li><a href="">Dekorasyon, </a><a href="">Ev Tekstili, </a><a href="">Banyo, </a><a href="">Elektrikli Ev Aletleri, </a><a href="">Ev & Mutfak Gereçleri, </a><a href="">Ofis & Kırtasiye</a></li>   
+                            </ul>
+                        </div> 
+
+                        <div class="column">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/12-09-2017_1591170557126_1.png">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/09-06-2020_1591691003463_1.png">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/09-06-2020_1591690932432_1.png">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/13-11-2018_1591170622538_1.png">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/27-03-2020_1591170615708_1.png">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/05-11-2020_1606984093324_1.png">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/05-11-2020_1606984171985_1.png">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/03-12-2020_1606984250780_1.png">
+                          </div>
+
+                          <div class="column">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/03-06-2020_1591690778717_1.png">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/12-11-2018_1591170579359_1.png">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/09-06-2020_1591691122947_1.png">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/09-08-2019_1591170600751_1.png">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/09-06-2020_1591691048143_1.png">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/09-06-2020_1591691086311_1.png">
+                            <img src="https://design.hepsiburada.net/assets/storefront/banners/05-11-2020_1606984155810_1.png">
+                            <img src="https://images.hepsiburada.net/banners/0/banner_20230320105438.jpeg">
+                          </div>
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+                              
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="buttongroup">
+                    <button class="button1">
+                    Oto,Bahçe,Yapı <br>Market
+                </button></div>
+
+                <div class="buttongroup">
+                <button class="button1">
+                    Anne,Bebek, <br> Oyuncak
+                </button></div>
+
+                <div class="buttongroup">
+                <button class="button1">
+                    Spor,<br>Outdoor
+                </button></div>
+
+                <div class="buttongroup">
+                    <button class="button1">
+                    Kozmetik, <br>Kişisel Bakım
+                </button></div>
+
+                <div class="buttongroup">
+                    <button class="button1">
+                    Süpermarket, <br>Pet Shop
+                </button></div>
+
+                <div class="buttongroup">
+                    <button class="button1">
+                    Kitap,Müzik,<br>Film,Hobi
+                </button></div>
+                
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                  
+
+               
+
+
+
+
+
+
+<!--
+    
+                <div class="buttongroup">
+                <button class="button1">
+                    Moda
+                </button>
+                <div class="dropdown-content">
+                <div class="row"> 
+                      <div class="column">
+                        <th>
+                            <td><h3>Moda Anasayfa</h3></td>
+                            <td><h3>Kadın</h3></td>
+                        </th>
+                        <ul>
+                            <li><a href="">Giyim</a></li>
+                            <li><a href="">Spor Giyim</a></li>
+                            <li><a href="">Büyük Beden</a></li>
+                            <li><a href="">Tesettür Giyim</a></li>
+                            <li><a href="">İç Giyim</a></li>
+                            <li><a href="">Plaj Giyim</a></li>
+                            <li><a href="">Kadın Ev Rahatlığı</a></li>
+                        </ul><br>
+                          
+                          <th>
+                            <td><h3>Kadın Aksesuar & Takı</h3></td>
+                          </th>
+
+                          <ul>
+                            <li><a href="">Saat</a></li>
+                            <li><a href="">Güneş Gözlüğü</a></li>
+                            <li><a href="">Takı & Bijuteri</a></li>
+                            <li><a href="">Mücevher</a></li>
+                          </ul><br>
+                        </div>
+                        
+
+                      <div class="column">
+                        <th>
+                            <td><h3>Erkek</h3></td>
+                        </th>
+                        <ul>
+                            <li><a href="">Giyim</a></li>
+                            <li><a href="">Spor Giyim</a></li>
+                            <li><a href="">Outdoor Giyim</a></li>
+                            <li><a href="">Klasik Giyim</a></li>
+                            <li><a href="">İç Giyim</a></li>
+                            <li><a href="">Plaj Giyim</a></li>
+                            <li><a href="">Pijama & Ev Giyim</a></li>
+                        </ul>
+                        
+                        <th>
+                            <td><h3>Erkek Aksesuar & Takı</h3></td>
+                        </th>
+                        <ul>
+                            <li><a href="">Saat</a></li>
+                            <li><a href="">Güneş Gözlüğü</a></li>
+                            <li><a href="">Takı</a></li>
+                            <li><a href="">Aksesuar</a> </li>
+                        </ul>
+
+                        <th>
+                            <td><h3>Altın</h3></td>
+                        </th>
+
+                        <th>
+                            <td><h3>Outdoor Giyim & Ayakkabı</h3></td>
+                        </th>
+                      </div>
+              
+                      <div class="column">
+                        <th>
+                            <td><h3>Ayakkabı & Çanta</h3></td>
+                        </th>
+                        <ul>
+                            <li><a href="">Kadın Ayakkabı</a></li>
+                            <li><a href="">Erkek Ayakkabı</a></li>
+                            <li><a href="">Sneaker</a></li>
+                            <li><a href="">Koşu Ayakkabısı</a></li>
+                            <li><a href="">Kadın Çanta</a></li>
+                            <li><a href="">Erkek Çanta</a></li>
+                            <li><a href="">Valiz & Seyahat</a></li>
+                        </ul><br>
+                       
+                        <th>
+                            <td><h3>Çocuk</h3></td>
+                        </th>
+                        <ul>
+                            <li><a href="">Kız Çocuk</a></li>
+                            <li><a href="">Erkek Çocuk</a></li>
+                            <li><a href="">Bebek</a></li>
+                            <li><a href="">Erkek Çocuk Ayakkabısı</a></li>
+                            <li><a href="">Kız Çocuk Ayakkabısı</a></li>
+                            <li><a href="">Bebek Ayakkabısı</a></li>
+                        </ul><br> 
+                        
+                      <th>
+                        <td><h3>Yurt Dışından</h3></td>
+                      </th>
+
+                      </div>
+
+                     
+                      <div class="column">
+                        <img src=https://images.hepsiburada.net/banners/0/banner_20230511102859.png>
+                      </div>
+              
+                      <div class="column">
+                        <img src="https://images.hepsiburada.net/banners/0/banner_20230511102923.png">
+                        <img src="https://images.hepsiburada.net/banners/0/banner_20230511102939.png">
+                      </div>
+
+                        <img src="https://images.hepsiburada.net/banners/0/banner_20230511103033.png">
+
+                        <div class="column">
+                            <img src=https://images.hepsiburada.net/banners/0/banner_20230511103108.png>
+                            <img src=https://images.hepsiburada.net/banners/0/banner_20221025110949.png>
+                            <img src=https://images.hepsiburada.net/banners/0/banner_20230511103238.png>
+                          </div>
+
+
+                          <div class="column">
+                            <img src=https://images.hepsiburada.net/banners/0/banner_20230511103127.png>
+                            <img src=https://images.hepsiburada.net/banners/0/banner_20230511103140.png>
+                            <img src=https://images.hepsiburada.net/banners/0/banner_20230511103209.png>
+                            <img src=https://images.hepsiburada.net/banners/0/banner_20230511103306.png>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     
+
+     
+
+
+
+
+
+
+
+    </header>
+
+
+
+
+
+</body>
+</html>
