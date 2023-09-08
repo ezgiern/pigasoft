@@ -296,7 +296,7 @@ form button:hover{
     
     .column {
         float: left;
-        width: 18%;
+        width: 18.5%;
         padding: 5px;
         background-color: white;
         height: auto;
@@ -361,6 +361,54 @@ form button:hover{
         font-weight:200;
         font-size: small;
     }
+
+    #oto a{
+        color:#484848;
+        font-weight:200;
+        font-size: small;
+    }
+
+    .tall img{
+        position: relative;
+        margin-top:10px;
+        border-radius:10px;
+        display: flex;
+        justify-content: center;
+      }
+
+      #kid a{
+        color:#484848;
+        font-weight:200;
+        font-size: small;
+    }
+
+    #sport a{
+        color:#484848;
+        font-weight:200;
+        font-size: small;
+    }
+
+    #makeup a{
+        color:#484848;
+        font-weight:200;
+        font-size: small;
+    }
+
+    #clean a{
+        color:#484848;
+        font-weight:200;
+        font-size: small;
+    }
+
+    #book a{
+        color:#484848;
+        font-weight:200;
+        font-size: small;
+    }
+
+
+    
+
 
 
     
