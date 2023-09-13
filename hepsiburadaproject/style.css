@@ -249,7 +249,7 @@ form button:hover{
    .buttongroup {
     float:left;
     overflow: hidden;
-    width: 11%;
+    width: 11.11149%;
     font-size: 12px;
     margin:0px auto;
     }
@@ -265,6 +265,7 @@ form button:hover{
         width: 100%;
         background: #f5f5f5;;
         height: 60px;
+        
     }
 
     .buttongroup:hover .button1 {
@@ -405,6 +406,285 @@ form button:hover{
         font-weight:200;
         font-size: small;
     }
+
+   .home{
+    height:500px;
+    background: url(https://images.hepsiburada.net/banners/s/0/1920-540/backgroundImage2106_20230824142012.jpeg/format:webp)
+    no-repeat;
+    background-size: cover;
+    background-position:-290px 40px;
+    margin-top:-3rem;
+    align-items: center;
+   }
+
+   .content{
+    max-width:100rem;
+    margin-left:100px;
+    padding-top: 75px;  
+}
+
+  
+    .content a{
+    font-size:0.8rem;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-right:20px;
+    padding-right:15px;
+    
+   }
+
+   .content a:focus{
+    position: relative;
+    background: #fafafa;
+    color: black;
+    height: 120px;
+    text-align: center;
+    width: 250px;
+    border-radius: 12px;
+    padding: 0.5rem 0.5rem;
+   }
+
+   .content a:focus:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: #fafafa transparent;
+    border-width: 20px 20px 0;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+ 
+
+   .white-box {
+    background-color: white;
+    color: black;
+    height:350px;
+    width:405px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top:10px;
+    margin-left:100px;
+    padding-top:45px;
+    padding-left:25px;
+    box-shadow: 2px 2px 2px #888888;
+    align-items: center;
+}
+    .white-box p{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#484848;
+    padding-top:10px;
+    padding-right:15px;
+    }
+
+    .home-button {
+        
+            background-color:#ff6000;
+            border: none;
+            padding: 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            margin: 14px 14px;
+            cursor: pointer;
+            border-radius: 24px;
+            font-weight:550;
+            width:150px;
+            height:38px;
+    }
+
+  
+
+.empty-box{
+    width: 600px;
+    height: 350px;
+    border: 5px solid white ;
+    margin-left:500px;
+    margin-top: -350px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #888888;
+  }
+
+  .empty-box img{
+    width:594px;
+    height:342px;
+    border-radius: 5px;
+    margin-left:-1.8px;
+    margin-top: -1px;
+  }
+  .sale{
+    margin-top: 30px;
+  }
+
+  .sale .sale-container {
+    display:grid;
+    grid-template-columns: 220px 220px 220px 220px 220px;
+    gap:0.05rem;
+    margin-left:50px;
+    padding-top:24px;
+  }
+
+  .sale h1{
+    color:#484848;
+    font-size:28px;
+    font-weight:700;
+    font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+    margin-left:60px;
+  }
+
+  .sale .sale-container .sale-box img{
+    width:100%;
+    object-fit:cover;
+    margin-left:-3px;
+    margin-top:14px;
+  }
+  .sale .sale-container .sale-box h4{
+    font-weight: 50;
+    color:#484848;
+    font-size:10.5px;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+  }
+
+  
+
+  .sale .sale-container .sale-box{
+    padding: 24px 8px 33px 8px;
+    background-color:#fff;
+    border:0.01px solid #d4d2d2;
+    border-radius:0.5rem;
+    height:350px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+  }
+
+  #fullimg img{
+    height:350px;
+    object-fit:fill;
+    border-radius:0.5rem;
+    width:100%;
+    margin-left: 0.05%;
+    margin-right: 0.05%;
+  }
+
+
+  #fullimg {
+    padding:0px;
+    border:0.01px solid #d4d2d2;
+    border-radius:0.5rem;
+    height:350px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+  }
+
+  .add-button{
+    background-color:#faede4;
+    border:none;
+    border-radius:8px;
+    color:#ff6000;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight:700;
+    cursor: pointer;
+    display:none;
+    font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+  }
+
+  .add-button:active{
+    background-color:#d4d2d2;
+    color:#888888;
+  }
+  
+
+  .price{
+    font-size:20px;
+    color:#ff6000;
+    font-weight:750;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+   
+  }
+
+  .price:hover{
+    display:none;
+  }
+
+  .price:hover + .add-button {
+    display:block;
+  }
+
+  .box-bottom {
+    margin-left:2px;
+    margin-top:8px;
+  }
+
+  .sale-container h3{
+    text-align: left;
+    font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+    font-size:17px;
+    font-weight:500;
+    color:#484848;
+  }
+
+  .sale-container h3 span {
+    color:#484848;
+    font-weight:600;
+  }
+
+  .brands .brand-container {
+    display:grid;
+    grid-template-columns: 138px 138px 138px 138px 138px 138px 138px 138px ;
+    gap:0.05rem;
+    margin-left:50px;
+    padding-top:24px;
+    text-align:center;
+  }
+
+  .brand-container img{
+    width:90%;
+    border:0.5px solid #d4d2d2;
+    border-radius: 10%;
+  }
+
+  .brands h1{
+    font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+    font-weight:700;
+    color:#484848;
+    font-size:28px;
+    margin-left:60px;
+  }
+
+  .brands{
+    margin-top:60px;
+  }
+  
+ .brand-container p{
+  font-size:13px;
+  font-weight:600;
+  color:#484848;
+  font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+ }
+
+ 
+
+  
+
+  
 
 
     
