@@ -680,9 +680,153 @@ form button:hover{
   font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
  }
 
- 
 
   
+ .attention .att-container {
+  display:grid;
+  grid-template-columns: 160px 160px 160px 160px 160px 160px 160px;
+  margin-left:50px;
+  padding-top:16px;
+}
+
+.attention .att-container .att-box{
+  padding: 24px 8px 20px 8px;
+  background-color:#fff;
+  border:0.01px solid #e7e5e5;
+  border-radius:0.5rem;
+  height:290px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+  margin-left:2px;
+
+}
+
+.attention .att-container .att-box-head img{
+  width:126%;
+  border-top-left-radius:0.5rem;
+  border-top-right-radius:0.5rem;
+  object-fit:fill;
+  margin-top:-24px;
+  margin-left:-18px;
+}
+
+.attention h1{
+  color:#484848;
+  font-size:28px;
+  font-weight:700;
+  font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+  margin-left:60px;
+}
+
+.attention{
+  margin-top:60px;
+}
+
+.attention .att-container .att-box h4{
+  color:#919191;
+  font-weight:600;
+  font-size:10.5px;
+  text-align:left;
+  font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+  width: 100%;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top:-25px;
+  
+}
+
+.new-price{
+  font-size:12px ;
+  font-weight:600; 
+  color:rgb(85, 161, 85);
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left:-46px;
+  margin-top:-30px;
+  margin-bottom:30px;
+  font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+ 
+}
+
+.add-button2{
+    background-color:#ff6000;
+    border:none;
+    border-radius:8px;
+    color:white;
+    padding: 6px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight:700;
+    cursor: pointer;
+    font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+    margin-bottom:-10px;
+    overflow: hidden; 
+    display:none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left:-1px;
+    margin-top:10px;
+    
+}
+
+.att-box:hover .add-button2{
+  display:block;
+  
+}
+.add-button2:active{
+  background-color:rgb(85, 161, 85);
+  color:white;
+}
+
+.rating{
+  align-items: center;
+  color:rgba(237, 157, 9, 0.858);
+  display: flex;
+  font-size: 15px;
+  height: 5vh;
+  justify-content: center;
+  font-style: italic;
+  margin-top:-30px;
+  margin-left:-40px;
+  font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+}
+
+.attention h5{
+  color:#484848e0;
+  font-size:12px;
+  font-weight:500;
+  font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+  margin-left:60px;
+}
+
+.new-price2{
+  font-size:13px ;
+  font-weight:600; 
+  color:rgba(7, 7, 7, 0.655);
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left:-60px;
+  margin-top:-40px;
+  margin-bottom:40px;
+  font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+}
+
+
+
+
+
+
+
+  
+
+
 
   
 
