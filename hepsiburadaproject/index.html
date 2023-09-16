@@ -34,6 +34,7 @@
                 <a class="search">
                     <img src="images/search.png" alt="search logo">
                 </a>
+
                 <input type="text" placeholder="Ürün,kategori veya marka ara">
                 <button type="submit">ARA</button>
             </form>
@@ -41,45 +42,61 @@
             
         </div>
 
+    
         <div class="location">
-        <form>
+        
                 <a class="loc-icon">
-                    <img src="images/loc.png" alt="loc logo">
+                    <img src="images/loc.png" >
                 </a>
             <label id="loc1" for="loc">Konum</label>
-            <select name="location" id="loc2">
-              <option value="il" disabled selected hidden>Konum Seç</option>
-              <option value="il">İl seçin</option>
-              <option value="ilçe">İlçe Seçin</option>
-              <option value="mahalle">Mahalle Seçin</option>
-              <option value="kaydet">Kaydet</option>
-            </select>  
-      </form>
+            
+            <button class="loc2">
+                Konum Seç 
+            </button>
+
+            <div class="panel">
+                      <h3>Konumunuzu Belirleyin</h3>
+                      <p>Adresinizi veya konum bilgilerinizi seçerek özel hizmetleri görebilirsiniz.</p>
+                      <div class="opt"><a href="#">İl seçin</a></div>
+                      <div class="opt"><a href="#">İlçe seçin</a></div>
+                      <div class="opt"><a href="#">Mahalle seçin</a></div>
+                      <div style="background-color:#91919190; font-weight:550" class="opt"><a style="margin-left:45px" href="#">Kaydet</a></div>
+                  
         </div>
+    </div>
 
 
         <div class="box1">
             <a class="user-icon">
             <img src="images/user.png" alt="user logo">
             </a>
-            <form>    
-                <select name="sign-in" id="sign">
-                  <option disabled selected hidden>Giriş Yap</option>
-                  <option value="signin">Giriş Yap</option>
-                  <option value="signup">Üye Ol</option>
-                  <option value="orders">Siparişlerim</option>
-                  <option value="q">Soru ve Taleplerim</option>
-                  <option value="op">Sana Özel Fırsatlar</option>
-                  <option value="pay">Hepsipay</option>
-                  <option value="user">Kullanıcı Bilgilerim</option>
-                  <option value="değerlendirme">Değerlendirmelerim</option>
-                  <option value="likes">Beğendiklerim</option>
-                  <option value="lists">Tüm Listelerim</option>
-                  <option value="coupon">Kuponlarım</option>
-                </select>  
-          </form>
-          <p id="part2">veya üye ol</p>
+
+            <button class="signin-btn">
+                Giriş Yap 
+            </button>
+
+            <p>veya üye ol</p>
+
+            <div class="signin-panel">
+                      <div class="opt2"><a href="#">Giriş Yap</a></div>
+                      <div class="opt2"><a href="#">Üye Ol</a></div>
+                      <hr class="horizontal-div">
+                      <div class="opt2"><a href="#">Siparişlerim</a></div>
+                      <div class="opt2"><a href="#">Soru ve Taleplerim</a></div>
+                      <div class="opt2"><a href="#">Sana Özel Fırsatlar</a></div>
+                      <div class="opt2"><a href="#">Hepsipay</a></div>
+                      <div class="opt2"><a href="#">Kullanıcı Bilgilerim</a></div>
+                      <div class="opt2"><a href="#">Değerlendirmelerim</a></div>
+                      <hr class="horizontal-div">
+                      <div class="opt2"><a href="#">Beğendiklerim</a></div>
+                      <div class="opt2"><a href="#">Tüm Listelerim</a></div>
+                      <hr class="horizontal-div">
+                      <div class="opt2"><a href="#">Kuponlarım</a></div>
+                  
+        </div>
             </div>
+
+        
 
             <div class="box2">
                 <a class="shoppingcar-icon">
@@ -135,7 +152,7 @@
                 }
             </style>
             
-            <div class="line">
+            <div style="margin-top:20px" class="line">
                 <div class="orange"></div>
                 <div class="blue"></div>
                 <div class="purple"></div>
@@ -150,8 +167,27 @@
                 
                 <button class="button1">
                     Elektronik 
-                </button></div>
-
+                </button>
+                        <div class="minimenu">
+                        <div class="dropdown-content">
+                        <div class="row"> 
+                              <div class="column">
+                                <ul>
+                                    <li><a href="#">Bilgisayar/Tablet<br></a></li>
+                                    <li><a href="#">Yazıcılar & Projeksiyon<br></a></li>
+                                    <li><a href="#">Telefon & Telefon Aksesuarları<br></a></li>
+                                    <li><a href="#">TV , Görüntü & Ses Sistemleri<br></a></li>
+                                    <li><a href="#">Beyaz Eşya<br></a></li>
+                                    <li><a href="#">Klima ve Isıtıcılar<br></a></li>
+                                    <li><a href="#">Elektrikli Ev Aletleri<br></a></li>
+                                    <li><a href="#">Foto & Kamera<br></a></li>
+                                    <li><a href="#">Oyun & Oyun Konsolları<br></a></li>
+                                </ul>
+                            </div>
+                </div>
+            </div>
+        </div>
+</div>
                 <div class="buttongroup">
                     <button class="button1">
                         Moda
@@ -1551,15 +1587,17 @@
 
 
              <section class="sale">
-                <h1>Süper Fiyat, Süper Teklif</h1>
+                <h1 style="display:inline-block">Süper Fiyat, Süper Teklif </h1> 
+                <a href="https://www.hepsiburada.com/gunun-firsati-teklifi"><span style="color:#ff6000;font-weight: 550; font-size:13px;display:inline-block;font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;">Tümü ></span></a>
+                
                 <div class="sale-container">
                     <div id="fullimg">
-                        <img src="https://images.hepsiburada.net/banners/s/0/224-371/homepageImage2099_20230911133304.png/format:webp">
+                        <a href="https://www.hepsiburada.com/gunun-firsati-teklifi"><img src="https://images.hepsiburada.net/banners/s/0/224-371/homepageImage2099_20230911133304.png/format:webp"></a>
                     </div>
                     <div class="sale-box">
                         <div class="box-head">
                         <h4>Bestway Ananas Model Şişme Deniz Yatağı - 43310</h4>
-                       <img src="https://productimages.hepsiburada.net/s/76/200-200/110000018210184.jpg">  
+                       <a href="https://www.hepsiburada.com/staticpage/214512799737036"><img src="https://productimages.hepsiburada.net/s/76/200-200/110000018210184.jpg"> </a> 
                     </div>
                     <div class="box-bottom">
                     <div class="price">
@@ -1575,7 +1613,7 @@
                         <div class="box-head">
                         <h4>Cata CT-5249 Martı Cabinet Dokunmatik Anahtarlı 3 Renk Modu
                             Cata</h4>
-                       <img src="https://productimages.hepsiburada.net/s/192/200-200/110000159481279.jpg">  
+                       <a href="https://www.hepsiburada.com/cata-ct-5249-marti-cabinet-dokunmatik-anahtarli-3-renk-modu-pm-HBC00001U8138"><img src="https://productimages.hepsiburada.net/s/192/200-200/110000159481279.jpg"></a>  
                     </div>
                     <div class="box-bottom">
                     <div class="price">
@@ -1592,11 +1630,11 @@
                     <div class="sale-box">
                         <div class="box-head">
                         <h4>Roidmi A100 3 Kademeli Yüksek Hızlı Saç Kurutma Makinesi</h4>
-                       <img src="https://productimages.hepsiburada.net/s/264/200-200/110000248557428.jpg">  
+                       <a href="https://www.hepsiburada.com/roidmi-a100-3-kademeli-yuksek-hizli-sac-kurutma-makinesi-pm-HBC00002QC4PE"><img src="https://productimages.hepsiburada.net/s/264/200-200/110000248557428.jpg">  </a>
                     </div>
                     <div class="box-bottom">
                     <div class="price">
-                    1.799,00 TL <span style="color:rgb(149, 148, 148); font-size:14px ;font-weight:100; text-decoration:line-through">1.999,00 TL</span>
+                    1.799,00 TL <span style="color:rgb(149, 148, 148); font-size:14px ;font-weight:100; text-decoration:line-through;white-space:nowrap">1.999,00 TL</span>
                     </div>
                     <button class="add-button">Sepete ekle</button>
                     </div>
@@ -1607,11 +1645,11 @@
                     <div class="sale-box">
                         <div class="box-head">
                         <h4>Yasomi Y80 Siyah 8 Litre 2850W Çift Hazneli ve Çift Motorlu Dokunmatik Airfryer Fritöz</h4>
-                       <img src="https://productimages.hepsiburada.net/s/352/200-200/110000360792689.jpg">  
+                       <a href="https://www.hepsiburada.com/yasomi-y80-siyah-8-litre-2850w-cift-hazneli-ve-cift-motorlu-dokunmatik-airfryer-fritoz-pm-HBC00003O19GI"><img src="https://productimages.hepsiburada.net/s/352/200-200/110000360792689.jpg"></a> 
                     </div>
                     <div class="box-bottom">
                     <div class="price">
-                    3.699,00 TL <span style="color:rgb(149, 148, 148); font-size:14px ;font-weight:100; text-decoration:line-through">3.899,00 TL</span>
+                    3.699,00 TL <span style="color:rgb(149, 148, 148); font-size:14px ;font-weight:100; text-decoration:line-through;white-space:nowrap">3.899,00 TL</span>
                     </div>
                     <button class="add-button">Sepete ekle</button>
                     </div>
@@ -1626,27 +1664,27 @@
                 
                 <div class="sale-container">
                     <h3>Deprem bölgelerine<span><br>destek olabilirsiniz</span></h3>
-                    <h3>Kolay<span>yolculuk</span></h3>
-                    <h3><span>3 saatte bir</span>yenilenen<br>&nbsp;&nbsp;fırsatlar</h3>
-                    <h3><span>Hepsipay</span>ile tanış</h3>
-                    <h3><span>Süper fiyatlarla</span>yurt<br>&nbsp;&nbsp;dışından ürünler</h3>
+                    <h3>Kolay<span>&nbsp;yolculuk</span></h3>
+                    <h3><span>3 saatte bir</span>&nbsp;yenilenen<br>fırsatlar</h3>
+                    <h3><span>Hepsipay</span>&nbsp;ile tanış</h3>
+                    <h3><span>Süper fiyatlarla</span>&nbsp;yurt<br>dışından ürünler</h3>
                 </div>
 
                 <div class="sale-container">
                     <div id="fullimg">
-                        <img src="https://images.hepsiburada.net/banners/s/0/227-403/marketingbillboard_20230221215933.jpeg/format:webp">
+                       <a href="https://www.hepsiburada.com/kampanyalar/deprem-yardim-kartlari"><img src="https://images.hepsiburada.net/banners/s/0/227-403/marketingbillboard_20230221215933.jpeg/format:webp"></a> 
                     </div>
                     <div id="fullimg">
-                        <img src="https://images.hepsiburada.net/banners/s/0/227-403/marketingbillboard_20230912110951.png/format:webp">
+                        <a href="https://www.hepsiburadaseyahat.com/?utm_source=hepsiburada&utm_medium=web&utm_campaign=billboard_hepsiburada_web"><img src="https://images.hepsiburada.net/banners/s/0/227-403/marketingbillboard_20230912110951.png/format:webp"></a> 
                     </div>
                     <div id="fullimg">
-                        <img src="https://images.hepsiburada.net/banners/s/0/227-403/marketingbillboard_20230912111117.jpeg/format:webp">
+                        <a href="https://www.hepsiburada.com/dort-dortluk-kampanya"><img src="https://images.hepsiburada.net/banners/s/0/227-403/marketingbillboard_20230912111117.jpeg/format:webp"></a> 
                     </div>
                     <div id="fullimg">
-                        <img src="https://images.hepsiburada.net/banners/s/0/227-403/marketingbillboard_20230907132409.png/format:webp">
+                        <a href="https://www.hepsiburada.com/cuzdanim/"> <img src="https://images.hepsiburada.net/banners/s/0/227-403/marketingbillboard_20230907132409.png/format:webp"></a>
                     </div>
                     <div id="fullimg">
-                        <img src="https://images.hepsiburada.net/banners/s/0/227-403/marketingbillboard_20230912111000.png/format:webp">
+                        <a href="https://www.hepsiburada.com/kampanyalar/yurt-disindan-urunler?wt_int=hybanner.yurtdisi.kampanya"><img src="https://images.hepsiburada.net/banners/s/0/227-403/marketingbillboard_20230912111000.png/format:webp"></a> 
                     </div>
                     
                 </div>
@@ -1713,14 +1751,17 @@
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/264/222-222/110000248557428.jpg/format:webp"> 
                     </div>
-                    <h4>Roidmi A100 3 Kademeli <br> Yüksek Hızlı Saç Kurutma Makinesi</h4> 
+                    <div class="like">
+                        <button class="like-btn"></button>
+                    </div>
+                    <h4 >Roidmi A100 3 Kademeli <br> Yüksek Hızlı Saç Kurutma Makinesi</h4> 
                    <div class="rating">
                     ★★★★☆ <span style="color:rgb(168, 166, 166) ; font-size:12px ;
-                    font-style:normal ">15</span>
+                    font-style:normal">15</span>
                    </div>
                     <div class="att-box-bottom">
-                    <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">1.999,00 TL</span><span style="margin-left:-0.7px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%10</span>
-                    <br>&nbsp;&nbsp;&nbsp;1.799,00 TL 
+                    <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">1.999,00 TL</span><span style="margin-left:4px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%10</span>
+                    <br>1.799,00 TL 
                     </div>
                     <button class="add-button2">Sepete ekle</button>
                     </div>
@@ -1728,17 +1769,22 @@
 
                     
                         <div class="att-box">
-                            <div class="att-box-head">
+                        <div class="att-box-head">
                            <img src="https://productimages.hepsiburada.net/s/352/222-222/110000361074119.jpg/format:webp"> 
+                           
                         </div>
+                        <div class="like">
+                            <button class="like-btn"></button>
+                        </div>
+                        
                         <h4>Ecoflow 100W Esnek <br> Güneş Paneli</h4> 
                        <div class="rating">
                         ★★★★☆ <span style="color:rgb(168, 166, 166) ; font-size:12px ;
                         font-style:normal ">2</span>
                        </div>
                         <div class="att-box-bottom">
-                        <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">9.600,00 TL</span><span style="margin-left:-0.7px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%31</span>
-                        <br>&nbsp;&nbsp;&nbsp;6.599,00 TL 
+                        <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">9.600,00 TL</span><span style="margin-left:4px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%31</span>
+                        <br>6.599,00 TL 
                         </div>
                         <button class="add-button2">Sepete ekle</button>
                         </div>
@@ -1749,14 +1795,17 @@
                                 <div class="att-box-head">
                                <img src="https://productimages.hepsiburada.net/s/441/222-222/110000473878149.jpg/format:webp"> 
                             </div>
+                            <div class="like">
+                                <button class="like-btn"></button>
+                            </div>
                             <h4>Philips Rapid Air Teknoloji<br>Airfryer Hd9255/60</h4> 
                            <div class="rating">
                             &nbsp;&nbsp;&nbsp;&nbsp;★★★★★ <span style="color:rgb(168, 166, 166) ; font-size:12px ;
                             font-style:normal ">1.404</span>
                            </div>
                             <div class="att-box-bottom">
-                            <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">3.699,00 TL</span><span style="margin-left:-0.7px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%12</span>
-                            <br>&nbsp;&nbsp;&nbsp;3.249,00 TL 
+                            <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">3.699,00 TL</span><span style="margin-left:4px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%12</span>
+                            <br>3.249,00 TL 
                             </div>
                             <button class="add-button2">Sepete ekle</button>
                             </div>
@@ -1767,48 +1816,59 @@
                                 <div class="att-box-head">
                                <img src="https://productimages.hepsiburada.net/s/280/222-222/110000266980947.jpg/format:webp"> 
                             </div>
+                            <div class="like">
+                                <button class="like-btn"></button>
+                            </div>
                             <h4>HC Care Complex Bitkisel<br>Saç Bakım Kompleksi - 100 ml</h4> 
                            <div class="rating">
                             &nbsp;&nbsp;&nbsp;★★★★★ <span style="color:rgb(168, 166, 166) ; font-size:12px ;
                             font-style:normal ">9.453</span>
                            </div>
                             <div class="att-box-bottom">
-                            <div class="new-price"><span style="color:rgba(0, 0, 0, 0.76); font-size:12px ;font-weight:700">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;349,00 TL</span>
-                            <br>&nbsp; <span style="font-size:11.5px ; color:rgb(85, 161, 85)">&nbsp;&nbsp;&nbsp;2. ürüne %50 indirim </span>
+                            <div class="new-price"><span style="color:rgba(0, 0, 0, 0.76); font-size:12px ;font-weight:700;margin-left:16px">349,00 TL</span>
+                            <br>&nbsp; <span style="font-size:11.5px ;margin-left:10px; color:rgb(85, 161, 85)">2. ürüne %50 indirim </span>
                             </div>
-                            <button class="add-button2">Sepete ekle</button>
+                            <button style="margin-left:-25px" class="add-button2">Sepete ekle</button>
                             </div>
                             </div>
+
 
 
                             <div class="att-box">
                                 <div class="att-box-head">
                                <img src="https://productimages.hepsiburada.net/s/432/222-222/110000465146023.jpg/format:webp"> 
                             </div>
+                            <div class="like">
+                                <button class="like-btn"></button>
+                            </div>
                             <h4>Rise and Shine Keratin<br>Kolajen Saç Bakım Sütü 200 ml</h4> 
                            <div class="rating">
-                            &nbsp;&nbsp;&nbsp;&nbsp;★★★★★ <span style="color:rgb(168, 166, 166) ; font-size:12px ;
+                            &nbsp;&nbsp;★★★★☆ <span style="color:rgb(168, 166, 166) ; font-size:12px ;
                             font-style:normal ">1.924</span>
                            </div>
-                           <div class="att-box-bottom">
-                            <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through; margin-left:-1px">139,00 TL</span><span style="margin-left:-0.7px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%29</span>
+                            <div style="margin-left:-18px" class="att-box-bottom">
+                            <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">139,00 TL</span><span style="margin-left:4px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%21</span>
                             <br>&nbsp;99,00 TL 
                             </div>
-                            <button class="add-button2">Sepete ekle</button>
+                            <button style="margin-left:-41px"class="add-button2">Sepete ekle</button>
                             </div>
                             </div>
+
 
                     
                             <div class="att-box">
                                 <div class="att-box-head">
                                <img src="https://productimages.hepsiburada.net/s/412/222-222/110000441605167.jpg/format:webp"> 
                             </div>
+                            <div class="like">
+                                <button class="like-btn"></button>
+                            </div>
                             <h4>Mexxsun Carspa Lexron<br>12 Volt 220 Volt Çevirici 2000 Watt Tam Sinus Invertör</h4> 
                            <div class="att-box-bottom">
-                            <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">10.084,07 TL</span><span style="margin-left:-0.7px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%18</span>
-                            <br>&nbsp;&nbsp;&nbsp;8.308,00 TL 
+                            <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">10.084,07 TL</span><span style="margin-left:4px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%18</span>
+                            <br>&nbsp;8.308,00 TL 
                             </div>
-                            <button class="add-button2">Sepete ekle</button>
+                            <button style="margin-left:-42px" class="add-button2">Sepete ekle</button>
                             </div>
                             </div>
 
@@ -1817,14 +1877,17 @@
                                 <div class="att-box-head">
                                <img src="https://productimages.hepsiburada.net/s/39/222-222/10644802961458.jpg/format:webp"> 
                             </div>
+                            <div class="like">
+                                <button class="like-btn"></button>
+                            </div>
                             <h4>Arzum AR5063 Volume<br>Pro Hava Üflemeli Saç Düzleştiricisi - Siyah</h4> 
                            <div class="rating">
                             &nbsp;&nbsp;&nbsp;&nbsp;★★★★★ <span style="color:rgb(168, 166, 166) ; font-size:12px ;
                             font-style:normal ">3.129</span>
                            </div>
                            <div class="att-box-bottom">
-                            <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">1.169,90 TL</span><span style="margin-left:-0.7px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%15</span>
-                            <br>&nbsp;&nbsp;&nbsp;999,90 TL 
+                            <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">1.169,90 TL</span><span style="margin-left:4px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%15</span>
+                            <br>999,90 TL 
                             </div>
                             <button class="add-button2">Sepete ekle</button>
                             </div>
@@ -1835,12 +1898,15 @@
 
 
             <section class="attention">
-                <h1>Fritözler</h1>
+                <h1 style="display:inline-block">Fritözler</h1> <a href="https://www.hepsiburada.com/c-c-22017"><span style="color:#ff6000;font-weight: 550; font-size:13px;display:inline-block;font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;">Tümü ></span></a>
                 <h5>Keşfetmeye devam et</h5>
                 <div class="att-container">
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/441/222-222/110000474723301.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>Philips Premium Airfryer<br>XXL HD9650/90</h4> 
                    <div class="rating">
@@ -1851,7 +1917,7 @@
                     <div class="new-price2">
                     <br>6.298,99 TL 
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-62px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>    
 
@@ -1860,6 +1926,9 @@
                             <div class="att-box">
                                 <div class="att-box-head">
                                <img src="https://productimages.hepsiburada.net/s/441/222-222/110000473878148.jpg/format:webp"> 
+                            </div>
+                            <div class="like">
+                                <button class="like-btn"></button>
                             </div>
                             <h4>Philips Essential Airfryer<br>HD9252/90</h4> 
                            <div class="rating">
@@ -1870,7 +1939,7 @@
                             <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">4.850,00 TL</span><span style="margin-left:-0.7px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%40</span>
                                 <br>&nbsp;&nbsp;&nbsp;2.898,00 TL 
                                 </div>
-                            <button class="add-button2">Sepete ekle</button>
+                            <button style="margin-left:-48px"  class="add-button2">Sepete ekle</button>
                             </div>
                             </div>
                             
@@ -1878,6 +1947,9 @@
                             <div class="att-box">
                                 <div class="att-box-head">
                                <img src="https://productimages.hepsiburada.net/s/122/222-222/110000071652942.jpg/format:webp"> 
+                            </div>
+                            <div class="like">
+                                <button class="like-btn"></button>
                             </div>
                             <h4>Xiaomi Mi Smart Air Fryer<br>3,5L Fritöz</h4> 
                            <div class="rating">
@@ -1888,7 +1960,7 @@
                             <div class="new-price2">
                             <br>2.288,00 TL 
                             </div>
-                            <button class="add-button2">Sepete ekle</button>
+                            <button style="margin-left:-62px" class="add-button2">Sepete ekle</button>
                             </div>
                             </div>  
 
@@ -1896,6 +1968,9 @@
                             <div class="att-box">
                                 <div class="att-box-head">
                                <img src="https://productimages.hepsiburada.net/s/441/222-222/110000474308071.jpg/format:webp"> 
+                            </div>
+                            <div class="like">
+                                <button class="like-btn"></button>
                             </div>
                             <h4>Philips HD9867/90<br>Premium Airfryer XXL Fritöz</h4> 
                            <div class="rating">
@@ -1906,13 +1981,16 @@
                             <div class="new-price2">
                             <br>6.999,00 TL 
                             </div>
-                            <button class="add-button2">Sepete ekle</button>
+                            <button style="margin-left:-62px" class="add-button2">Sepete ekle</button>
                             </div>
                             </div> 
 
                             <div class="att-box">
                                 <div class="att-box-head">
                                <img src="https://productimages.hepsiburada.net/s/350/222-222/110000358767605.jpg/format:webp"> 
+                            </div>
+                            <div class="like">
+                                <button class="like-btn"></button>
                             </div>
                             <h4>Xiaomi Mi Smart Air Fryer<br>6lt</h4> 
                            <div class="rating">
@@ -1923,13 +2001,16 @@
                             <div class="new-price2">
                             <br>3.582,00 TL 
                             </div>
-                            <button class="add-button2">Sepete ekle</button>
+                            <button style="margin-left:-62px" class="add-button2">Sepete ekle</button>
                             </div>
                             </div> 
 
                             <div class="att-box">
                                 <div class="att-box-head">
                                <img src="https://productimages.hepsiburada.net/s/376/222-222/110000393492334.jpg/format:webp"> 
+                            </div>
+                            <div class="like">
+                                <button class="like-btn"></button>
                             </div>
                             <h4>Altus Al 899 Af EcoFryer<br>(AirFryer)</h4> 
                            <div class="rating">
@@ -1940,13 +2021,16 @@
                             <div class="new-price2">
                             <br>1.199,00 TL 
                             </div>
-                            <button class="add-button2">Sepete ekle</button>
+                            <button style="margin-left:-62px" class="add-button2">Sepete ekle</button>
                             </div>
                             </div> 
 
                             <div class="att-box">
                                 <div class="att-box-head">
                                <img src="https://productimages.hepsiburada.net/s/401/222-222/110000426627011.jpg/format:webp"> 
+                            </div>
+                            <div class="like">
+                                <button class="like-btn"></button>
                             </div>
                             <h4>Tefal EY8018 Easy Fry &<br>Grill & XXL Yağsız Fritöz Airfryer, 6,5 Litre Kapasite, Hava ile Kızartma & Izgara, Siyah – 7211004776</h4> 
                            <div class="rating">
@@ -1957,7 +2041,7 @@
                             <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">5.499,00 TL</span><span style="margin-left:-0.7px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%9</span>
                                 <br>&nbsp;&nbsp;&nbsp;4.999,00 TL 
                                 </div>
-                            <button class="add-button2">Sepete ekle</button>
+                            <button style="margin-left:-52px" class="add-button2">Sepete ekle</button>
                             </div>
                             </div>
             </div>
@@ -1965,25 +2049,31 @@
 
 
             <section class="attention">
-                <h1>Güneş Enerjisi</h1>
+                <h1 style="display:inline-block">Güneş Enerjisi</h1><a href="https://www.hepsiburada.com/c-c-22017"><span style="color:#ff6000;font-weight: 550; font-size:13px;display:inline-block;font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;">&nbsp;&nbsp;Tümü ></span></a>
                 <h5>Keşfetmeye devam et</h5>
                 <div class="att-container">
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/439/222-222/110000472741007.jpg/format:webp"> 
                     </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
+                    </div>
                     <h4>Dokio Güneş Enerji Paneli<br>100W Katlanır Portatif Solar Panel Monokristal Panel Teknolojisi</h4> 
                    <div class="att-box-bottom">
                     <div class="new-price2">
                     <br>6.999,00 TL 
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-62px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div> 
                     
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/352/222-222/110000361074119.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>Ecoflow 100W Esnek<br>Güneş Paneli</h4> 
                    <div class="rating">
@@ -1992,15 +2082,18 @@
                    </div>
                    <div class="att-box-bottom">
                     <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">9.600,00 TL</span><span style="margin-left:-0.7px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%31</span>
-                        <br>&nbsp;&nbsp;&nbsp;6.599,00 TL 
+                        <br>6.599,00 TL 
                         </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-48px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>
 
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/115/222-222/110000063049692.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>Mexxsun 12V 2000W Tam<br>Sinüs Inverter</h4> 
                    <div class="rating">
@@ -2011,7 +2104,7 @@
                     <div class="new-price2">
                     <br>8.176,27 TL 
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-62px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div> 
 
@@ -2020,6 +2113,9 @@
                             <div class="att-box-head">
                            <img src="https://productimages.hepsiburada.net/s/412/222-222/110000441605164.jpg/format:webp"> 
                         </div>
+                        <div class="like">
+                            <button class="like-btn"></button>
+                        </div>
                         <p style="background-color:#ff6000; color:white;
                         font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important; font-weight:600; border-radius:2px; font-size:10.2px;margin-left:-38px; padding:1px; margin-bottom:7px">Krediyle Hemen Al</p>
                         <h4>Mexxsun Carspa Lexron<br>12 Volt 220 Volt Çevirici 3000 Watt Tam Sinus Invertör</h4> 
@@ -2027,7 +2123,7 @@
                         <div style="margin-bottom:22px" class="new-price2">
                         <br>&nbsp;12.587,42 TL 
                         </div>
-                        <button class="add-button2">Sepete ekle</button>
+                        <button style="margin-left:-55px" class="add-button2">Sepete ekle</button>
                         </div>
                         </div> 
 
@@ -2035,18 +2131,21 @@
                             <div class="att-box-head">
                            <img src="https://productimages.hepsiburada.net/s/222/222-222/110000202185105.jpg/format:webp"> 
                         </div>
+                        <div class="like">
+                            <button class="like-btn"></button>
+                        </div>
                         <p style="background-color:#ff6000; color:white;
-                        font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important; font-weight:600; border-radius:2px; font-size:10.2px;margin-left:-58px; padding:1px; margin-bottom:7px">Yurt Dışından</p>
-                        <h4>KKmoon 12 V 4.5 W<br>Taşınabilir Güneş Paneli Güç Araba Tekne (Yurt Dışından)</h4> 
-                        <div class="rating">
+                        font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important; font-weight:600; border-radius:2px; font-size:10.2px;margin-left:-58px; padding:1px; margin-bottom:30px">Yurt Dışından</p>
+                        <h4 style="margin-bottom:24px">KKmoon 12 V 4.5 W<br>Taşınabilir Güneş Paneli Güç Araba Tekne (Yurt Dışından)</h4> 
+                        <div style="margin-bottom:24px" class="rating">
                             ★★★★★ <span style="color:rgb(168, 166, 166) ; font-size:12px ;
                             font-style:normal ">1</span>
                            </div>
                        <div class="att-box-bottom">
-                        <div style="margin-bottom:8px" class="new-price2">
+                        <div style="margin-bottom:25px" class="new-price2">
                         <br>686,40 TL 
                         </div>
-                        <button class="add-button2">Sepete ekle</button>
+                        <button style="margin-left:-66px" class="add-button2">Sepete ekle</button>
                         </div>
                         </div> 
 
@@ -2054,22 +2153,28 @@
                             <div class="att-box-head">
                            <img src="https://productimages.hepsiburada.net/s/93/222-222/110000035714151.jpg/format:webp"> 
                         </div>
+                        <div class="like">
+                            <button class="like-btn"></button>
+                        </div>
                         <h4>Lexron Güneş Enerji Paneli Solar 340W Monokristal<br>(166X100CM) LEXRON-SP340M</h4> 
                        <div class="rating">
                         ★★★★☆ <span style="color:rgb(168, 166, 166) ; font-size:12px ;
                         font-style:normal ">21</span>
                        </div>
                        <div class="att-box-bottom">
-                        <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">5.499,00 TL</span><span style="margin-left:-0.7px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%1</span>
-                            <br>&nbsp;&nbsp;&nbsp;5.449,00 TL 
+                        <div class="new-price"><span style="color:rgb(149, 148, 148); font-size:11.5px ;font-weight:100; text-decoration:line-through">5.499,00 TL</span><span style="margin-left:6px; font-size:11.5px ; color:rgba(0, 0, 0, 0.696)">%1</span>
+                            <br>5.449,00 TL 
                             </div>
-                        <button class="add-button2">Sepete ekle</button>
+                        <button style="margin-left:-51px" class="add-button2">Sepete ekle</button>
                         </div>
                         </div>
 
                         <div class="att-box">
                             <div class="att-box-head">
                            <img src="https://productimages.hepsiburada.net/s/149/222-222/110000104122837.jpg/format:webp"> 
+                        </div>
+                        <div class="like">
+                            <button class="like-btn"></button>
                         </div>
                         <p style="background-color:#ff6000; color:white;
                         font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important; font-weight:600; border-radius:2px; font-size:10.2px;margin-left:-36px; padding:1px;margin-top:-20px; margin-bottom:4px">Krediyle Hemen Al</p>
@@ -2082,19 +2187,22 @@
                         <div style="margin-bottom:30px" class="new-price2">
                         <br>&nbsp;&nbsp;&nbsp;33.793,00 TL 
                         </div>
-                        <button class="add-button2">Sepete ekle</button>
+                        <button style="margin-left:-52px" class="add-button2">Sepete ekle</button>
                         </div>
                         </div> 
                 </div>
             </section>
 
             <section class="attention">
-                <h1>Saç Maskeleri,Bakım Krem,Losyon Ve Spreyleri</h1>
+                <h1 style="display:inline-block">Saç Maskeleri,Bakım Krem,Losyon Ve Spreyleri</h1><a href="https://www.hepsiburada.com/c-c-22017"><span style="color:#ff6000;font-weight: 550; font-size:13px;display:inline-block;font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;">&nbsp;&nbsp;Tümü ></span></a>
                 <h5>Keşfetmeye devam et</h5>
                 <div class="att-container">
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/280/222-222/110000266980947.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>HC Care Complex Bitkisel<br>Saç Bakım Kompleksi - 100 ml</h4> 
                    <div class="rating">
@@ -2105,13 +2213,16 @@
                     <div class="new-price"><span style="color:rgba(0, 0, 0, 0.76); font-size:12px ;font-weight:700">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;349,00 TL</span>
                     <br>&nbsp; <span style="font-size:11.5px ; color:rgb(85, 161, 85)">&nbsp;&nbsp;&nbsp;2. ürüne %50 indirim </span>
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-25px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>
 
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/429/222-222/110000460335661.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>URBAN Care Expert Serisi<br>Biotin ve Kafein Saç Toniği-Hızlı Uzamaya -200 ML</h4> 
                    <div class="rating">
@@ -2122,13 +2233,16 @@
                     <div style="margin-left:-68px;margin-bottom:44px" class="new-price2">
                     <br>112,90 TL 
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-67px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div> 
 
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/131/222-222/110000082242501.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>Motto Plus Professional<br>Brezilya Fönü Keratini 2'li Bakım Seti -Keratin - Şampuan</h4> 
                    <div class="rating">
@@ -2139,13 +2253,16 @@
                     <div style="margin-left:-68px;margin-bottom:44px" class="new-price2">
                     <br>129,90 TL 
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-66px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>
                     
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/342/222-222/110000349486867.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>HC Care Complex Bitkisel<br>Saç Bakım Kompleksi Büyük Boy - 200 ml</h4> 
                    <div class="rating">
@@ -2156,13 +2273,16 @@
                     <div class="new-price"><span style="color:rgba(0, 0, 0, 0.76); font-size:12px ;font-weight:700">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;549,00 TL</span>
                     <br>&nbsp; <span style="font-size:11.5px ; color:rgb(85, 161, 85)">&nbsp;&nbsp;&nbsp;2. ürüne %50 indirim </span>
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-25px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>
 
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/6/222-222/9746370592818.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>Redist Keratin Yağı Force<br>100 Ml</h4> 
                    <div class="rating">
@@ -2173,13 +2293,16 @@
                     <div style="margin-left:-68px;margin-bottom:44px" class="new-price2">
                     <br>238,00 TL 
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-66px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>
 
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/432/222-222/110000464667493.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>Yves Rocher Kırılma<br>Karşıtı/Isı Koruyucu (Reparation) Prebiyotik Serum - Vegan-100 ml</h4> 
                    <div class="rating">
@@ -2190,13 +2313,16 @@
                     <div style="margin-left:-68px;margin-bottom:44px" class="new-price2">
                     <br>223,92 TL 
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-66px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>
 
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/399/222-222/110000424702127.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>Urban Care Marka: Expert<br>Biotin & Caffeine Tonik Sprey 200 Ml[saç Kökünü]</h4> 
                    <div class="rating">
@@ -2207,7 +2333,7 @@
                     <div style="margin-left:-68px;margin-bottom:44px" class="new-price2">
                     <br>109,90 TL 
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-66px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>
 
@@ -2216,12 +2342,15 @@
 
 
             <section class="attention">
-                <h1>Saç Kurutma Makineleri</h1>
+                <h1 style="display:inline-block">Saç Kurutma Makineleri</h1> <a href="https://www.hepsiburada.com/c-c-22017"><span style="color:#ff6000;font-weight: 550; font-size:13px;display:inline-block;font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;">&nbsp;&nbsp;Tümü ></span></a>
                 <h5>Keşfetmeye devam et</h5>
                 <div class="att-container">
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/1/222-222/9535127650354.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>Powertec Tr 901 Saç<br>Kurutma Fön Makinesi</h4> 
                    <div class="rating">
@@ -2232,13 +2361,16 @@
                     <div style="margin-left:-68px;margin-bottom:44px" class="new-price2">
                     <br>379,90 TL 
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-66px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>
 
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/182/222-222/110000147438369.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>Arzum AR5007 Shiny<br>2200W İyonlu Saç Kurutma Makinesi</h4> 
                    <div class="rating">
@@ -2249,13 +2381,16 @@
                     <div style="margin-left:-68px;margin-bottom:44px" class="new-price2">
                     <br>569,00 TL 
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-66px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>
 
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/409/222-222/110000437568667.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>Dyson Supersonic™ Saç<br>Kurutma Makinesi (Vinca mavisi/Rosé)</h4> 
                    <div class="rating">
@@ -2266,13 +2401,16 @@
                     <div style="margin-left:-68px;margin-bottom:44px" class="new-price2">
                     <br>13,999 TL 
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-66px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>
 
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/19/222-222/9827040919602.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>Powertec TR-601 2500 W<br>Profesyonel Fön Makinesi</h4> 
                    <div class="rating">
@@ -2283,13 +2421,16 @@
                     <div style="margin-left:-68px;margin-bottom:44px" class="new-price2">
                     <br>376,50 TL 
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-66px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>
 
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/128/222-222/110000079074709.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>Arzum AR5011 İmaj Saç<br>Kurutma Makinesi</h4> 
                    <div class="rating">
@@ -2300,13 +2441,16 @@
                     <div style="margin-left:-68px;margin-bottom:44px" class="new-price2">
                     <br>499,00 TL 
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-66px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>
 
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/29/222-222/10271066587186.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>Grundig HD 4880 2400<br>Watt İyonik Saç Kurutma Makinesi</h4> 
                    <div class="rating">
@@ -2317,13 +2461,16 @@
                     <div class="new-price"><span style="color:rgba(0, 0, 0, 0.76); font-size:12px ;font-weight:700">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;569,00 TL</span>
                     <br>&nbsp; <span style="font-size:11.5px ; color:rgb(85, 161, 85)">&nbsp;&nbsp;&nbsp;600 TL'ye %5 indirim</span>
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-25px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>
 
                     <div class="att-box">
                         <div class="att-box-head">
                        <img src="https://productimages.hepsiburada.net/s/35/222-222/10486057730098.jpg/format:webp"> 
+                    </div>
+                    <div class="like">
+                        <button class="like-btn"></button>
                     </div>
                     <h4>Awox Fold Katlanabilir Saç<br>Kurutma Makinesi Beyaz</h4> 
                    <div class="rating">
@@ -2334,7 +2481,7 @@
                     <div style="margin-left:-68px;margin-bottom:44px" class="new-price2">
                     <br>166,50 TL 
                     </div>
-                    <button class="add-button2">Sepete ekle</button>
+                    <button style="margin-left:-66px" class="add-button2">Sepete ekle</button>
                     </div>
                     </div>
 
@@ -2382,7 +2529,7 @@
             </section>
 
 <section>
-    <hr class="horizontal-div">
+    <hr style="width:80%; margin:auto"class="horizontal-div">
     <div class="au-body">
                 <div class="aboutus">
                     <input id=ch type="checkbox">
@@ -2450,7 +2597,7 @@ En iyi ürünleri en uygun fiyatlarla, en hızlı teslimatla ve müşteri memnun
                    <label class="view-more" for="ch">Devamını Göster</label>
                 </div>
             </div>
-            <hr class="horizontal-div">
+            <hr style="width:80%; margin:auto" class="horizontal-div">
             </section>
 
             <section>
@@ -2643,19 +2790,75 @@ En iyi ürünleri en uygun fiyatlarla, en hızlı teslimatla ve müşteri memnun
                         <p>WhatsApp Destek</p>
                     </div>
 
-                    <h4><br><br>Mobil Uygulamalar</h4>
+                    <h4><br><br>Mobil Uygulamalar<br><br></h4>
 
 
+                    <button style="height:40px;width:170px" class="mobile" type="submit"><a href="https://apps.apple.com/qa/app/hepsiburada/id481035064?_ga=1.233749270.943623564.1417507753"><img style="float:left" src="images/mobile.png"><span style="margin-left:-24px">APP STORE'dan</span> <br> <span style=" font-weight:500;margin-left:-14px;color:#91919195;">İNDİREBİLİRSİNİZ</span></a></button>
 
 
+                    <button style="height:40px;width:170px" class="mobile" type="submit"><a href="https://play.google.com/store/apps/details?id=com.pozitron.hepsiburada&feature=search_result&pli=1#?t=W251bGwsMSwxLDEsImNvbS5wb3ppdHJvbi5oZXBzaWJ1cmFkYSJd"><img style="float:left" src="images/android.png"><span style="margin-left:-10px">GOOGLE PLAY'den</span> <br> <span style=" font-weight:500;margin-left:-14px;color:#91919195;">İNDİREBİLİRSİNİZ</span></a></button>
+
+                    <button style="height:40px;width:170px" class="mobile" type="submit"><a href="https://appgallery.huawei.com/#/app/C100884391"><img style="float:left" src="images/app.png"><span style="margin-left:-10px">APP GALLERY'den</span> <br> <span style=" font-weight:500;margin-left:-14px;color:#91919195;">İNDİREBİLİRSİNİZ</span></a></button>
+
+                    <h4 style="margin-top:24px">Giyim - Moda <br><br></h4>
+
+                    <ol>
+                        <li><a href="">Erkek Kazak</a>/<a href="">Kadın Kazak</a></li>
+                        <li><a href="">Erkek Mont</a>/<a href="">Kadın Mont</a></li>
+                        <li><a href="">Erkek Bot</a>/<a href="">Kadın Bot</a></li>
+                        <li><a href="">Kadın Ayakkabı</a>/<a href="">Ayakkabı</a></li>
+                        <li><a href="">Spor Ayakkabı</a></li>
+                        <li><a href="">Sweatshirt</a>/<a href="">Kadın Sweatshirt</a></li>
+                        <li><a href="">Takım Elbise </a>/<a href="">Elbise </a></li>
+                        <li><a href="">Abiye Elbise</a></li>
+                        <li><a href="">Çanta</a>/<a href="">Etek</a>/<a href="">Tunik</a>/<a href="">Trençkot</a></li>
+                    </ol>
+
+                    <h4 style="margin-top:20px">Taraftar Ürünleri<br><br></h4>
+                    <ol>
+                        <li><a href="">Beşiktaş Ürünleri</a></li>
+                        <li><a href="">Trabzonspor Ürünleri</a></li>
+                        <li><a href="">Galatasaray Ürünleri</a></li>
+                        <li><a href="">Fenerbahçe Ürünleri</a></li>
+                    </ol>
 
                     </div>
-
-                    
-
-
-
                 </div>
+            </section>
+
+            <section>
+                <div class="last-part">
+                    <div>
+                    <div class="first-line">
+                    <img style="width:26%" src="https://images.hepsiburada.net/assets/footerWebP/imageUrl2094_20201110131516.webp">
+                    <img style="width:17%" src="https://images.hepsiburada.net/assets/footerWebP/imageUrl2107_20201110131529.webp">
+                    <img style="width:8%" src="https://images.hepsiburada.net/assets/footerWebP/imageUrl2066_20201110131447.webp">
+                    <img style="width:8%" src="https://images.hepsiburada.net/assets/footerWebP/imageUrl2114_20201110131437.webp">
+                    <img style="width:7%" src="https://images.hepsiburada.net/assets/footerWebP/imageUrl2122_20201216131442.webp">
+                    </div>
+                <div class="second-line">
+                    <img style="width:17%" src="https://images.hepsiburada.net/assets/footerWebP/imageUrl2099_20201110131323.webp">
+                    <img style="width:26%" src="https://images.hepsiburada.net/assets/footerWebP/imageUrl2084_20201110131406.webp">
+                    <img style="width:17%" src="https://images.hepsiburada.net/assets/footerWebP/imageUrl2098_20201110131420.webp"></row>
+                </div>
+                </div>
+                <div class="right-side">
+                    <img style="width:12%" src="https://images.hepsiburada.net/assets/footer-sf/bonus-new.svg">
+                    <img style="width:8%" src="https://images.hepsiburada.net/assets/footer-sf/maximum-new.svg">
+                    <img style="width:8%" src="https://images.hepsiburada.net/assets/footer-sf/world-new.svg">
+                    <img style="width:6%" src="https://images.hepsiburada.net/assets/footer-sf/ziraat-new.svg">
+                    <img style="width:8%" src="https://images.hepsiburada.net/assets/footer-sf/finans-new.svg">
+                    <img style="width:6%" src="https://images.hepsiburada.net/assets/footer-sf/axess-new-3.svg">
+                    <img style="width:6%" src="https://images.hepsiburada.net/assets/footer-sf/advantage-new.svg">
+                    <img style="width:6%" src="https://images.hepsiburada.net/assets/footer-sf/paraf-new.svg">
+                    <img style="width:6%" src="https://images.hepsiburada.net/assets/footer-sf/visa.svg">
+                    <img style="width:4%" src="https://images.hepsiburada.net/assets/footer-sf/mastercard.svg">
+                    <img style="width:4%" src="https://images.hepsiburada.net/assets/footer-sf/ae.svg">
+                    <img style="width:6%" src="https://images.hepsiburada.net/assets/footer-sf/troy.svg">
+                    <div><p>Her şey ayağına gelsin! © Copyright 1998 - 2023 D-MARKET Elektronik Hizmetler Tic. A.Ş. Her Hakkı Saklıdır.</p></div>
+                    <div><span>Hepsiburada.com, Bir Doğan Online Markasıdır.</span></div>
+                </div>
+                
             </section>
 
    
